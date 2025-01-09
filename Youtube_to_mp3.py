@@ -30,7 +30,8 @@ continue_loop=True;
 while(continue_loop==True):
     choice =input("""
 1. Download
-2. Exit""")
+2. Exit 
+""")
     if choice == "1":
         youtube_to_mp3(input("Enter the YouTube video URL: "))
 
