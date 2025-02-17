@@ -8,7 +8,7 @@ def youtube_to_mp3(youtube_url, output_path="output"):
         os.makedirs(output_path, exist_ok=True)
 
         # Download YouTube video
-        yt = YouTube(youtube_url)
+        yt = YouTube(youtube_url,'WEB')
         video = yt.streams.filter(only_audio=True).order_by('abr').last()
         download_path = video.download(output_path)
 
